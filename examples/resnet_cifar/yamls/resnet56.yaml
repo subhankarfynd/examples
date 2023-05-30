@@ -35,15 +35,15 @@ lr_scheduler:
   - 120ep
   gamma: 0.1    # Multiplier to learning rate when decaying
 
-# loggers:
-#  progress_bar: {}
+loggers:
+  progress_bar: {}
   # wandb:     # Uncomment and fill below arguments to use WandB logger
   #   entity:  # Name of WandB entity, usually username or organization name
   #   project: # Name of WandB project
   #   group:   # Name of WandB group
 
 # Save checkpoint parameters
-save_folder: './{run_name}/ckpt'                   # e.g. './{run_name}/ckpt' (local) or 's3://mybucket/mydir/{run_name}/ckpt' (remote)
+save_folder: './{run_name}/ckpt' # e.g. './{run_name}/ckpt' (local) or 's3://mybucket/mydir/{run_name}/ckpt' (remote)
 save_interval: 10ep             # Interval to checkpoint based on time string
 save_num_checkpoints_to_keep: 1 # Cleans up checkpoints saved locally only!
 
