@@ -35,8 +35,8 @@ lr_scheduler:
   - 120ep
   gamma: 0.1    # Multiplier to learning rate when decaying
 
-loggers:
-  progress_bar: {}
+# loggers:
+#  progress_bar: {}
   # wandb:     # Uncomment and fill below arguments to use WandB logger
   #   entity:  # Name of WandB entity, usually username or organization name
   #   project: # Name of WandB project
